@@ -14,9 +14,6 @@ import retrofit2.Response
  * Data Provider for the application
  */
 object SignUpRepository {
-
-
-
     fun registerUser(successHandler: (SignUpResponse) -> Unit, failureHandler: (String) -> Unit, onFaliureHandler: (Throwable) -> Unit, request: SignUpRequest) {
         val webService = ApiHelper.createService()
         webService.registeration(request).enqueue(object : Callback<SignUpResponse> {

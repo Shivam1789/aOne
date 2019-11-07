@@ -12,5 +12,6 @@
     <dimen name="heading_medium2">15sp</dimen>
     <dimen name="heading_large">16sp</dimen>
     <dimen name="navigation_txt_size">@dimen/_15ssp</dimen>
+    <dimen name="padding_button">12dp</dimen>
 
 </resources>

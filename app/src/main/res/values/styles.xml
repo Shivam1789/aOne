@@ -11,6 +11,17 @@
         <item name="android:windowDisablePreview">true</item>
     </style>
 
+
+    <!--Button style-->
+    <style name="App_ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">@dimen/padding_button</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/txt_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/access"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.school.kotlin.utils.views.RobotoBoldTextView
+        android:id="@+id/txt_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/_500_engaging_videos"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_access" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txt_input_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_eng">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/txt_mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/mobile_number"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt_input_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_name" />
+
+    <LinearLayout
+        android:id="@+id/layout_mobile_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="@id/txt_input_name"
+        app:layout_constraintStart_toStartOf="@id/txt_mobile_number"
+        app:layout_constraintTop_toBottomOf="@id/txt_mobile_number">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:ccp_countryPreference="US,ID,NZ"
+                app:ccp_defaultCode="91"
+                app:ccp_showFlag="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/color_grey" />
+        </LinearLayout>
+
+        <com.school.kotlin.utils.views.RobotoRegularEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txt_input_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_mobile_number">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txt_input_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_email">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city_nearest_location"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <com.school.kotlin.utils.views.RobotoRegularButton
+        android:id="@+id/btn_SignIn"
+        style="@style/App_ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:background="@drawable/bg_gradient_button"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/txt_input_city"
+        app:layout_constraintStart_toStartOf="@id/txt_input_city"
+        app:layout_constraintTop_toBottomOf="@id/txt_input_city" />
+
+</android.support.constraint.ConstraintLayout>

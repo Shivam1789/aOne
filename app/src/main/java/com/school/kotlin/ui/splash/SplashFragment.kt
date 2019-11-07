@@ -15,6 +15,7 @@ import com.school.kotlin.R
 import com.school.kotlin.activities.nevigational.NevigationalActivity
 
 import com.school.kotlin.ui.other.BaseFragment
+import com.school.kotlin.ui.signUp.FragmentSignUp
 import com.school.kotlin.ui.tutorial.FragmentTutorial
 import com.school.kotlin.utils.Constants
 import com.school.kotlin.utils.getValue
@@ -66,7 +67,7 @@ class SplashFragment : BaseFragment() {
         val enableLocationStatus = pref?.getValue(Constants.IS_ENABLE_LOCATION, false)
 
         if (tutorialStatus != null && !tutorialStatus) {
-            replaceFragment(FragmentTutorial(), true)
+            replaceFragment(FragmentSignUp(), true)
         } else if (enableLocationStatus != null && !enableLocationStatus) {
 
         } else {

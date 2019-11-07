@@ -34,13 +34,11 @@
     <string name="lunch">Lunch</string>
     <string name="proceed_to_pay">Proceed to Pay</string>
     <string name="hello_parent">Hello Parent !</string>
-    <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="create_an_account">Create an Account</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="phone_number">Phone Number</string>
-    <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="submit">Submit</string>
@@ -132,5 +130,15 @@
     <string name="logout_msg">Are you sure you want to logout?</string>
     <string name="select_student">Please select a student</string>
     <string name="digit_number">0123456789</string>
+
+
+    <!--Strings starts her-->
+    <string name="access">Access</string>
+    <string name="_500_engaging_videos">500+ Engaging Videos</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email</string>
+    <string name="city_nearest_location">City / Nearest location</string>
+    <string name="register">Register</string>
 
 </resources>
