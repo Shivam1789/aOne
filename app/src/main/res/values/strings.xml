@@ -2,7 +2,6 @@
     <string name="app_name">One School</string>
     <string name="title_activity_dashboard">dashboardActivity</string>
     <string name="no_internet_message">Internet connection appears to be offline. Please check your network settings.</string>
-    <string name="enter_otp">Enter the OTP sent to your \n Phone number</string>
     <string name="engage_with_your_school"><![CDATA[Engage with your school anytime \n & anywhere. \n Let\'s get connected !!]]></string>
     <string name="enable_location_and_search_by_name">Enable location to see nearby \n schools or you can search by name.</string>
     <string name="skip_search_by_name"><![CDATA[Skip & search by name]]></string>
@@ -103,10 +102,8 @@
     <string name="reset_password">Reset Password</string>
     <string name="new_password">New Password</string>
     <string name="alphabet">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-</string>
-    <string name="didn_t_receive_otp">Didn\'t receive OTP?</string>
     <string name="_00_40">00:40</string>
     <string name="resend_otp">Resend OTP</string>
-    <string name="verify">Verify</string>
     <string name="about_us">About Us</string>
     <string name="signUp_phone_empty">Enter your Phone Number.</string>
     <string name="phn_number_length">Please enter phone number between 8 to 15 digits</string>
@@ -141,5 +138,8 @@
     <string name="city_nearest_location">City / Nearest location</string>
     <string name="register">Register</string>
     <string name="already_registered">Already registered?</string>
+    <string name="verify">Verify</string>
+    <string name="enter_otp">To complete registration\n\nwe have sent 4 digit OTP to</string>
+    <string name="didn_t_receive_otp">Didn\'t receive SMS?</string>
 
 </resources>
