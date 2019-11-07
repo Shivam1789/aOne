@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "79764137360",
+    "firebase_url": "https://newprojects-1504772315531.firebaseio.com",
+    "project_id": "newprojects-1504772315531",
+    "storage_bucket": "newprojects-1504772315531.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79764137360:android:4c97eda5c990b294",
+        "android_client_info": {
+          "package_name": "com.example.android.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79764137360-389ugoh3n0mb47b0qrr45u2lpa40qd1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrOnm6seMv1F1ifYtWcG86-YY9iWvKiW8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79764137360:android:f964fd4ab6833087",
+        "android_client_info": {
+          "package_name": "com.school.kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79764137360-389ugoh3n0mb47b0qrr45u2lpa40qd1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrOnm6seMv1F1ifYtWcG86-YY9iWvKiW8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

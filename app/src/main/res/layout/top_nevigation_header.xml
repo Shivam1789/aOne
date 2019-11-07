@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:background="@color/button_blue"
+    android:focusable="true">
+
+
+    <com.school.kotlin.utils.CircleImageView
+        android:id="@+id/image_user_profile"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_user_profile_holder"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.school.kotlin.utils.views.RobotoBoldTextView
+        android:id="@+id/text_users_name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/_17ssp"
+        android:gravity="start|center"
+        android:paddingStart="30dp"
+        android:textStyle="bold"
+        android:text="@string/hello_parent"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@+id/image_user_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/image_user_profile"
+        app:layout_constraintStart_toEndOf="@+id/image_user_profile"/>
+
+</android.support.constraint.ConstraintLayout>

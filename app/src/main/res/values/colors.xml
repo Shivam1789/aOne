@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5D4B90</color>
+    <color name="colorPrimaryDark">#80000000</color>
+    <color name="colorAccent">#20aff5</color>
+    <color name="button_green">#2DAD6A</color>
+    <color name="button_orange">#FD7B12</color>
+    <color name="button_blue">#20aff5</color>
+    <color name="color_red">#FFB30B05</color>
+    <color name="color_black">#3e3e3e</color>
+    <color name="color_tab_top_text">#989898</color>
+    <color name="color_button_register">#036494</color>
+    <color name="color_grey">#898989</color>
+    <color name="terms_color">#b2b2b1</color>
+
+    <color name="warning">#E86850</color>
+    <color name="color_grey_button">#D3D3D3</color>
+    <color name="color_grey_view">#FFE1E1E1</color>
+    <color name="weekDayColor">#FFBAB9B9</color>
+    <color name="end_color">#74CAF9</color>
+    <color name="color_fragment_deshboard">#F5F5F5</color>
+    <color name="color_transparent_dashboard">#80D3D3D3</color>
+    <color name="top_color">#1C81D0</color>
+    <color name="center_color">#4DA9E7</color>
+    <color name="hint_color">#898989</color>
+    <color name="green">#FF90AD3D</color>
+    <color name="red">#FFF24149</color>
+    <color name="color_multi_white">#FBFBFB</color>
+    <color name="color_background_amount">#DADADA</color>
+    <color name="color_green_text">#72A76B</color>
+    <color name="grey_color_code">#898989</color>
+    <color name="black_color_code">#3e3e3e</color>
+    <color name="blue_color_code">#20aff5</color>
+    <color name="navigation_view_color">#cacaca</color>
+    <color name="list_txt_color">#474C51</color>
+    <color name="color_span_grey">#8e8e8d</color>
+
+</resources>

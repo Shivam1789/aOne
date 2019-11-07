@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+    <style name="DialogZoomAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_zoom_out</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="App_Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/background_scl</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_15ssp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">@color/weekDayColor</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/button_blue</item> <!-- activated color change as you wish -->
+    </style>
+
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">@color/button_blue</item>
+        <item name="colorControlNormal">#d7d7d7</item>
+    </style>
+
+    <style name="back_button_style">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/ic_arrow_right</item>
+
+    </style>
+
+    <style name="text_header_style">
+        <item name="android:textColor">@color/black_color_code</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <!-- Pinview style-->
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="week_view_date_color" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="tab_text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="editTextSize_Setting" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black_color_code</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/color_tab_top_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">false</item>
+
+    </style>
+
+
+    <style name="editTextSize_cart" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/black_color_code</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:textSize">16sp</item>
+
+        <item name="android:backgroundTint">@color/color_tab_top_text</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+
+    </style>
+
+
+
+
+
+
+<style name="text_view_date_date_monthly" parent="@android:style/Widget.TextView">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+    <style name="text_view_new" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/weekDayColor</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="text_view_amount" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black_color_code</item>
+        <item name="android:background">@drawable/background_square</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingStart">11dp</item>
+
+        <item name="android:paddingEnd">11dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">30dp</item>
+
+
+    </style>
+
+    <style name="EditTextTheme" parent="@android:style/Widget.TextView">
+        <item name="colorControlNormal">@color/grey_color_code</item>
+        <item name="colorControlActivated">@color/grey_color_code</item>
+        <item name="colorControlHighlight">@color/grey_color_code</item>
+    </style>
+</resources>
