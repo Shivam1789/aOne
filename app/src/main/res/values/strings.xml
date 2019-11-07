@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">One School</string>
+    <string name="title_activity_dashboard">dashboardActivity</string>
+    <string name="no_internet_message">Internet connection appears to be offline. Please check your network settings.</string>
+    <string name="enter_otp">Enter the OTP sent to your \n Phone number</string>
+    <string name="engage_with_your_school"><![CDATA[Engage with your school anytime \n & anywhere. \n Let\'s get connected !!]]></string>
+    <string name="enable_location_and_search_by_name">Enable location to see nearby \n schools or you can search by name.</string>
+    <string name="skip_search_by_name"><![CDATA[Skip & search by name]]></string>
+    <string name="term_condition"><![CDATA[Terms & Conditions]]></string>
+    <string name="terms_and_privacy_policy"><![CDATA[By creating an account, I accept the School App]]></string>
+    <string name="not_subscribe_ptsa">It seems like you have not yet \n subscribe to PTSA Community</string>
+    <string name="request_for_access_desc">Your Request for access has been \n submitted, you will be notified once \n the access is granted</string>
+    <string name="search_by_location">Search by Location</string>
+    <string name="search_by_name">Search by Name</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="permission_denied">Permission has been denied, you need to give permission to do the operation, press OK to open settings</string>
+    <string name="search_by_address">Search by Address</string>
+    <string name="search_by_school_name">Search by School Name</string>
+    <string name="formatted_place_data">%1$s</string>
+    <string name="place_select_failed">Place selection failed:</string>
+    <string name="set_time">00.00</string>
+    <string name="the_school_app">The school app</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="welcome_to_the_school_app">Welcome to The School App !</string>
+    <string name="check_location_permission_setting">Cant Fetch Location Please Check Permissions Setting</string>
+    <string name="student_profile">Student profile</string>
+    <string name="transactions">Transactions</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="giving">Giving</string>
+    <string name="ptsa">PTSA</string>
+    <string name="eflyers">eFlyers</string>
+    <string name="lunch">Lunch</string>
+    <string name="proceed_to_pay">Proceed to Pay</string>
+    <string name="hello_parent">Hello Parent !</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="abount">About</string>
+    <string name="notifications">Notifications</string>
+    <string name="calendar">Calendar</string>
+    <string name="events">Events</string>
+    <string name="gallery">Gallery</string>
+    <string name="terms">Terms of Services</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="find_your_school">Find your School</string>
+    <string name="enable_location">Enable Location</string>
+    <string name="current_location">Current Location</string>
+    <string name="request_for_access">Request for access</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="add_new_student">Add new Student</string>
+    <string name="hello_parent_ji">Hello Parent !!</string>
+    <string name="select_school">Select School</string>
+    <string name="date_format">MM/dd/yyyy</string>
+    <string name="list">List</string>
+    <string name="to_view_all_school_listing">To view school listing either search by school name</string>
+
+    <string name="to_view_school_listing">To view school listing either search by school name or by location</string>
+    <string name="no_school_found">No records to display</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="close">Close</string>
+    <string-array name="custom_weekdays">
+        <item>Mo</item>
+        <item>Tu</item>
+        <item>We</item>
+        <item>Th</item>
+        <item>Fr</item>
+        <item>Sa</item>
+        <item>Su</item>
+    </string-array>
+
+
+    <string name="verified">Verified</string>
+    <string name="unverified">Unverified</string>
+    <string name="signUp_first_name_empty">Enter your First name.</string>
+    <string name="signUp_last_name_empty">Enter your Last Name.</string>
+    <string name="signUp_password_empty">Enter the Password.</string>
+    <string name="sifnUp_confirm_password">Enter confirm password.</string>
+    <string name="signUp_confirmPassword_empty">Please enter confirm password.</string>
+    <string name="signUp_confirmPassword_match">Password and confirm password do not match.</string>
+    <string name="signUp_password_length">Please enter password between 8 to 16 characters. Your password should include alphabets, a numbers and a special characters.</string>
+    <string name="signUp_firstName_length">First Name should be in between 2 to 50 characters.</string>
+    <string name="signUp_lastName_length">"Last Name should be in between 2 to 50 characters.</string>
+    <string name="signUp_addressOne_empty">Please search your address.</string>
+    <string name="signUp_city_empty">Please enter city.</string>
+    <string name="signUp_state_empty">Please select state.</string>
+    <string name="signUp_zip_empty">Please enter zip code.</string>
+    <string name="signUp_contact_number">Please enter your Phone Number.</string>
+    <string name="signUp_email_empty">Enter your E-Mail.</string>
+    <string name="signUp_email_valid">Enter a valid E-Mail.</string>
+    <string name="signUp_secondary_email_valid">Please enter a valid secondary E-Mail.</string>
+    <string name="server_error">Server not responding. Please try again later</string>
+    <string name="signUp_phone_length">Phone number should be in between 6 to 15 characters.</string>
+    <string name="forgot_password_on">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="alphabet">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ./-</string>
+    <string name="didn_t_receive_otp">Didn\'t receive OTP?</string>
+    <string name="_00_40">00:40</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+    <string name="about_us">About Us</string>
+    <string name="signUp_phone_empty">Enter your Phone Number.</string>
+    <string name="phn_number_length">Please enter phone number between 8 to 15 digits</string>
+    <string name="oops_you_don_t_have_access">Oops!!! You Don\'t have access</string>
+    <string name="otp_empty">Enter the OTP</string>
+    <string name="login_phone_empty">Enter your Phone Number.</string>
+    <string name="login_password_empty">Enter the Password.</string>
+    <string name="forgot_phone_empty">Enter your Phone Number.</string>
+    <string name="reset_newPassword_empty">Enter new password</string>
+    <string name="reset_password_length">Please enter password between 8 to 16 characters. Your password should include alphabets, a numbers and a special characters.</string>
+    <string name="reset_confirm_password_empty">Enter confirm password</string>
+    <string name="pass_not_matched">Your new and confirm password do not match</string>
+    <string name="change_it_mobile_verify">Please verfiy your phone number if you want to change it</string>
+    <string name="description">Description</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="home_back_button">Please click BACK again to exit.</string>
+
+    <string name="logOut">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="account_delete_msg">Are you sure you want to delete your account? Your all appointments will be cancelled.</string>
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="select_student">Please select a student</string>
+    <string name="digit_number">0123456789</string>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+<android.support.constraint.ConstraintLayout
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/text_top_space"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logo_tutorial"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_top_space" />
+
+    <com.school.kotlin.utils.views.RobotoBoldTextView
+        android:id="@+id/text_welcome_school"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        style="@style/text_header_style"
+        android:textSize="@dimen/_18ssp"
+        android:text="@string/welcome_to_the_school_app"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/text_engage_with"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/_14ssp"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/engage_with_your_school"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/text_welcome_school"
+        app:layout_constraintStart_toStartOf="@+id/text_welcome_school"
+        app:layout_constraintTop_toBottomOf="@+id/text_welcome_school" />
+
+    <com.school.kotlin.utils.views.RobotoRegularButton
+        android:id="@+id/button_lets_start"
+        style="@style/App_Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/let_s_start"
+        android:background="@drawable/background_tutorial"
+        app:layout_constraintLeft_toLeftOf="@+id/text_engage_with"
+        app:layout_constraintRight_toRightOf="@+id/text_engage_with"
+        app:layout_constraintTop_toBottomOf="@+id/text_engage_with" />
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/text_space"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_lets_start" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

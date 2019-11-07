@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.school.kotlin"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+    kapt {
+        generateStubs = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "full"
+    productFlavors {
+        qa {
+            dimension "full"
+            buildConfigField("String", "BASE_URL", '"http://oneschoolapp.debutinfotech.com/api/"')
+        }
+        local {
+            dimension "full"
+            buildConfigField("String", "BASE_URL", '"http://112.196.27.245/schoolapp_web/api/"')
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+    signingConfigs {
+        release {
+            try {
+                storeFile file("base.keystore")
+                storePassword KEYSTORE_PASSWORD
+                keyAlias "base"
+                keyPassword KEY_PASSWORD
+            }
+            catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_PASSWORD and KEY_PASSWORD in gradle.properties.")
+            }
+        }
+    }
+}
+kotlin {
+    experimental {
+        coroutines "enable"
+    }
+}
+
+
+ext.supportLibVersion = "26.1.0"
+ext.AAVersion = "4.3.1"
+ext.firebaseVersion = "11.4.2"
+ext.glideVersion = "4.3.1"
+ext.retrofitVersion = "2.3.0"
+ext.daggerVersion = "2.13"
+ext.archRoomVersion = "1.0.0"
+ext.rxVersion = "1.1.0"
+ext.archLifeCycleVersion = "1.1.0"
+ext.playServiceVersion = "11.4.2"
+
+dependencies {
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Support library
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    implementation "com.android.support:design:$supportLibVersion"
+    implementation "com.android.support:support-v4:$supportLibVersion"
+    implementation "com.android.support:support-annotations:$supportLibVersion"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //Firebase
+    implementation "com.google.firebase:firebase-storage:$firebaseVersion"
+    implementation "com.google.firebase:firebase-auth:$firebaseVersion"
+
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    // Constraint layout
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:4.28.0'
+
+    // Google Sign in
+    implementation "com.google.android.gms:play-services-auth:$playServiceVersion"
+    implementation "com.google.android.gms:play-services-places:$playServiceVersion"
+    implementation "com.google.android.gms:play-services-location:$playServiceVersion"
+
+
+    // Stetho library for data inspection via chrome
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+
+    implementation 'com.hbb20:ccp:2.1.9'
+    //custom calender (week and month) code picker
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+
+
+    //intuit for different devices size
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+
+    //chuck
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    //live data
+    implementation "android.arch.lifecycle:runtime:$archLifeCycleVersion"
+    implementation "android.arch.lifecycle:extensions:$archLifeCycleVersion"
+
+
+    //progressBar
+    implementation 'com.wang.avi:library:2.1.3'
+
+
+    //Event Bus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

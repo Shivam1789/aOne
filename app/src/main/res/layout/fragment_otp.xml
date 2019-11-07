@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_back_otp"
+        style="@style/back_button_style"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusableInTouchMode="false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.school.kotlin.utils.views.RobotoBoldTextView
+                android:id="@+id/text_top_header"
+                style="@style/text_header_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/verify_phone_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.school.kotlin.utils.views.RobotoRegularTextView
+                android:id="@+id/text_enter_otp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/enter_otp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@+id/text_top_header"
+                app:layout_constraintStart_toStartOf="@+id/text_top_header"
+                app:layout_constraintTop_toBottomOf="@+id/text_top_header" />
+
+
+            <com.school.kotlin.utils.views.RobotoBoldTextView
+                android:id="@+id/text_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@+id/text_enter_otp"
+                app:layout_constraintStart_toStartOf="@+id/text_enter_otp"
+                app:layout_constraintTop_toBottomOf="@+id/text_enter_otp" />
+
+
+            <com.school.kotlin.ui.other.PinView
+                android:id="@+id/pin_view_otp"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                app:itemCount="6"
+                app:itemSpacing="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_mobile" />
+
+            <com.school.kotlin.utils.views.RobotoBoldTextView
+                android:id="@+id/text_count_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/_00_40"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/pin_view_otp"
+                app:layout_constraintStart_toStartOf="@+id/pin_view_otp"
+                app:layout_constraintTop_toBottomOf="@+id/pin_view_otp" />
+
+
+            <com.school.kotlin.utils.views.RobotoRegularTextView
+                android:id="@+id/text_not_otp_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/didn_t_receive_otp"
+                android:textColor="@android:color/black"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/text_count_timer"
+                app:layout_constraintStart_toStartOf="@+id/text_count_timer"
+                app:layout_constraintTop_toBottomOf="@+id/text_count_timer" />
+
+
+            <ImageView
+                android:id="@+id/image_resend"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="@+id/pin_view_otp"
+                app:layout_constraintStart_toStartOf="@+id/pin_view_otp"
+                app:layout_constraintTop_toBottomOf="@+id/text_not_otp_receive"
+                app:srcCompat="@drawable/ic_resend" />
+
+            <com.school.kotlin.utils.views.RobotoRegularTextView
+                android:id="@+id/textViewResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/resend_otp"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="@+id/image_resend"
+                app:layout_constraintStart_toStartOf="@+id/image_resend"
+                app:layout_constraintTop_toBottomOf="@+id/image_resend" />
+
+
+            <com.school.kotlin.utils.views.RobotoRegularButton
+                android:id="@+id/button_verify_otp"
+                style="@style/App_Button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/verify"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewResend" />
+
+
+            <TextView
+                android:id="@+id/text_space"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button_verify_otp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="splash_logo_size">@dimen/_130sdp</dimen>
+    <dimen name="navigation_view_width">300dp</dimen>
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">0dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">1dp</dimen>
+    <dimen name="common_padding">5dp</dimen>
+    <dimen name="heading_small">12sp</dimen>
+    <dimen name="heading_medium">14sp</dimen>
+    <dimen name="heading_medium2">15sp</dimen>
+    <dimen name="heading_large">16sp</dimen>
+    <dimen name="navigation_txt_size">@dimen/_15ssp</dimen>
+
+</resources>
