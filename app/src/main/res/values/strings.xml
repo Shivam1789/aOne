@@ -140,5 +140,6 @@
     <string name="email">Email</string>
     <string name="city_nearest_location">City / Nearest location</string>
     <string name="register">Register</string>
+    <string name="already_registered">Already registered?</string>
 
 </resources>

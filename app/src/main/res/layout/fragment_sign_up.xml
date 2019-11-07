@@ -163,4 +163,27 @@
         app:layout_constraintStart_toStartOf="@id/txt_input_city"
         app:layout_constraintTop_toBottomOf="@id/txt_input_city" />
 
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/txt_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/already_registered"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.school.kotlin.utils.views.RobotoBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@id/txt_already"
+        app:layout_constraintStart_toEndOf="@id/txt_already"
+        app:layout_constraintTop_toTopOf="@id/txt_already" />
+
 </android.support.constraint.ConstraintLayout>
