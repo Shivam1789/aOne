@@ -38,13 +38,9 @@ android {
     }
     flavorDimensions "full"
     productFlavors {
-        qa {
+        dev {
             dimension "full"
-            buildConfigField("String", "BASE_URL", '"http://oneschoolapp.debutinfotech.com/api/"')
-        }
-        local {
-            dimension "full"
-            buildConfigField("String", "BASE_URL", '"http://112.196.27.245/schoolapp_web/api/"')
+            buildConfigField("String", "BASE_URL", '"http://saferidecafe.com/aoneclasses/api/"')
         }
     }
     androidExtensions {
