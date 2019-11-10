@@ -142,4 +142,7 @@
     <string name="enter_otp">To complete registration\n\nwe have sent 4 digit OTP to</string>
     <string name="didn_t_receive_otp">Didn\'t receive SMS?</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

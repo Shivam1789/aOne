@@ -46,7 +46,7 @@
             android:windowSoftInputMode="adjustPan" />
 
         <activity
-            android:name="com.school.kotlin.activities.nevigational.NevigationalActivity"
+            android:name="com.school.kotlin.activities.navigational.NavigationalActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"

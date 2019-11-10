@@ -26,7 +26,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import android.widget.Toast
 import com.school.kotlin.R
-import com.school.kotlin.activities.nevigational.NevigationalActivity
+import com.school.kotlin.activities.navigational.NavigationalActivity
 import com.school.kotlin.utils.Constants.PERMISSION_READ_EXTERNAL_STORAGE
 import java.text.ParseException
 import java.text.SimpleDateFormat
@@ -110,7 +110,7 @@ object Utils {
                pref?.setValue(Constants.PHONE_NUMBER,phone)
            }
        }
-        val intent = Intent(context, NevigationalActivity::class.java)
+        val intent = Intent(context, NavigationalActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         context.startActivity(intent)
         if (context is Activity) {

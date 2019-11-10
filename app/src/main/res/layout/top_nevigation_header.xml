@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:clickable="true"
-    android:background="@color/button_blue"
     android:focusable="true">
 
 
@@ -14,8 +12,8 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginStart="10dp"
-        android:src="@drawable/ic_user_profile_holder"
         android:contentDescription="@null"
+        android:src="@drawable/ic_user_profile_holder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,19 +21,37 @@
     <com.school.kotlin.utils.views.RobotoBoldTextView
         android:id="@+id/text_users_name"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="15dp"
-        android:maxLines="1"
         android:ellipsize="end"
-        android:textSize="@dimen/_17ssp"
         android:gravity="start|center"
-        android:paddingStart="30dp"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:text="Shivam"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_17ssp"
         android:textStyle="bold"
-        android:text="@string/hello_parent"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="@+id/image_user_profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/image_user_profile"
-        app:layout_constraintStart_toEndOf="@+id/image_user_profile"/>
+        app:layout_constraintStart_toEndOf="@+id/image_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/image_user_profile" />
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/text_course"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:alpha="0.5"
+        android:ellipsize="end"
+        android:gravity="start|center"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:text="12th Grade- Commerce"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_users_name"
+        app:layout_constraintTop_toBottomOf="@id/text_users_name" />
 
 </android.support.constraint.ConstraintLayout>

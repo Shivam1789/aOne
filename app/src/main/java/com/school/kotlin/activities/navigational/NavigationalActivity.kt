@@ -1,4 +1,4 @@
-package com.school.kotlin.activities.nevigational
+package com.school.kotlin.activities.navigational
 
 
 import android.content.Intent
@@ -22,7 +22,7 @@ import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
 
-class NevigationalActivity : BaseActivity(), View.OnClickListener {
+class NavigationalActivity : BaseActivity(), View.OnClickListener {
     private var mDrawerToggle: ActionBarDrawerToggle? = null
 
 
@@ -77,7 +77,7 @@ class NevigationalActivity : BaseActivity(), View.OnClickListener {
                 val moveFactor = width * slideOffset
                 container.translationX = moveFactor
                 header.translationX = moveFactor*/
-                Utils.hideKeyboard(this@NevigationalActivity)
+                Utils.hideKeyboard(this@NavigationalActivity)
             }
         }
         // Defer code dependent on restoration of previous instance state.

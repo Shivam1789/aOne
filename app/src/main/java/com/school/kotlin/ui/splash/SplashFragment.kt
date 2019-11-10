@@ -12,7 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import com.school.kotlin.R
-import com.school.kotlin.activities.nevigational.NevigationalActivity
+import com.school.kotlin.activities.navigational.NavigationalActivity
 import com.school.kotlin.ui.other.BaseFragment
 import com.school.kotlin.ui.otp.FragmentOtp
 import com.school.kotlin.utils.Constants
@@ -64,16 +64,16 @@ class SplashFragment : BaseFragment() {
         val tutorialStatus = pref?.getValue(Constants.IS_TUTORIAL_SEEN, false)
         val enableLocationStatus = pref?.getValue(Constants.IS_ENABLE_LOCATION, false)
 
-        if (tutorialStatus != null && !tutorialStatus) {
-            replaceFragment(FragmentOtp(), true)
-        } else if (enableLocationStatus != null && !enableLocationStatus) {
-
-        } else {
-            val intent = Intent(activity, NevigationalActivity::class.java)
+//        if (tutorialStatus != null && !tutorialStatus) {
+//            replaceFragment(FragmentOtp(), true)
+//        } else if (enableLocationStatus != null && !enableLocationStatus) {
+//
+//        } else {
+            val intent = Intent(activity, NavigationalActivity::class.java)
             startActivity(intent)
             activity?.finish()
             activity?.overridePendingTransition(R.anim.anim_in, R.anim.anim_out)
-        }
+//        }
         hideProgressDialog()
     }
 
