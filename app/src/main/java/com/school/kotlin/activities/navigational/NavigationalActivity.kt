@@ -35,6 +35,9 @@ class NavigationalActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun init() {
+        val intent = Intent(this, DashboardNavigation::class.java)
+        startActivity(intent)
+        overridePendingTransition(R.anim.anim_in, R.anim.anim_out)
         setListener()
     }
 

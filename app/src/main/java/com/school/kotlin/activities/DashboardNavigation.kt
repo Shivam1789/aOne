@@ -3,6 +3,7 @@ package com.school.kotlin.activities
 
 import android.os.Bundle
 import com.school.kotlin.R
+import com.school.kotlin.ui.HomeFragment
 
 import com.school.kotlin.utils.Constants
 
@@ -11,8 +12,11 @@ class DashboardNavigation : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-        val type = intent.extras.getInt(Constants.FRAGMENT_TYPE)
+        val type = intent?.extras?.getInt(Constants.FRAGMENT_TYPE)
         val bundle = Bundle()
+
+
+        replaceFragment(HomeFragment())
 
     }
 
