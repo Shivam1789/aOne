@@ -1,0 +1,7 @@
+#Sun Nov 10 22:52:28 IST 2019
+base.0=E\:\\android projects\\Aone school\\aOne\\app\\build\\intermediates\\dex\\devDebug\\mergeExtDexDevDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=E\:\\android projects\\Aone school\\aOne\\app\\build\\intermediates\\dex\\devDebug\\mergeProjectDexDevDebug\\out\\classes.dex

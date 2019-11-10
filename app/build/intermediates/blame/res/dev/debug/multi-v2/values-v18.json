@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\android projects\\Aone school\\aOne\\app\\build\\intermediates\\incremental\\mergeDevDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\lovkesh handa\\.gradle\\caches\\transforms-2\\files-2.1\\36b6482b03f88b105c1cdfa17a3bd960\\appcompat-v7-26.1.0\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp"
+    android:background="@drawable/white_rounded_corners"
+    android:layout_height="wrap_content">
+
+    <com.school.kotlin.utils.views.RobotoRegularTextView
+        android:id="@+id/tvItem"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

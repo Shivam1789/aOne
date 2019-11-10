@@ -1,0 +1,367 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.school.kotlin"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:6:5-79
+11-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:7:5-67
+12-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:8:5-79
+13-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:9:5-81
+14-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:10:5-80
+15-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:10:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:11:5-81
+16-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:22:5-67
+17-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:22:22-65
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:22:5-81
+18-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:22:22-79
+19
+20    <permission
+20-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:24:5-109
+21        android:name="com.school.kotlin.permission.C2D_MESSAGE"
+21-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:24:17-71
+22        android:protectionLevel="signature" />
+22-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:24:72-107
+23
+24    <uses-permission android:name="com.school.kotlin.permission.C2D_MESSAGE" />
+24-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:26:5-78
+24-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:26:22-76
+25
+26    <uses-feature
+26-->[com.google.android.gms:play-services-maps:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc49f4e936a5ed31cbff1e31450f5d53\play-services-maps-11.4.2\AndroidManifest.xml:21:5-77
+27        android:glEsVersion="0x00020000"
+27-->[com.google.android.gms:play-services-maps:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc49f4e936a5ed31cbff1e31450f5d53\play-services-maps-11.4.2\AndroidManifest.xml:21:19-51
+28        android:required="true" />
+28-->[com.google.android.gms:play-services-maps:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc49f4e936a5ed31cbff1e31450f5d53\play-services-maps-11.4.2\AndroidManifest.xml:21:52-75
+29
+30    <meta-data
+30-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:26:9-28:38
+31        android:name="android.support.VERSION"
+31-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:27:13-51
+32        android:value="25.3.1" />
+32-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:28:13-35
+33
+34    <application
+34-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:14:5-60:19
+35        android:name="com.school.kotlin.application.BaseProject"
+35-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:15:9-65
+36        android:allowBackup="true"
+36-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:16:9-35
+37        android:debuggable="true"
+38        android:fullBackupContent="true"
+38-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:17:9-41
+39        android:icon="@mipmap/app_logo"
+39-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:18:9-40
+40        android:label="@string/app_name"
+40-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:19:9-41
+41        android:largeHeap="true"
+41-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:20:9-33
+42        android:resizeableActivity="false"
+42-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:21:9-43
+43        android:roundIcon="@mipmap/app_logo"
+43-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:22:9-45
+44        android:supportsRtl="true"
+44-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:23:9-35
+45        android:theme="@style/AppTheme" >
+45-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:25:9-40
+46        <meta-data
+46-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:26:9-28:71
+47            android:name="com.google.android.geo.API_KEY"
+47-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:27:13-58
+48            android:value="AIzaSyA_Q5IsS71cTIjmmMhJR9j-0DkEOLWrlvc" />
+48-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:28:13-68
+49
+50        <activity
+50-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:30:9-39:20
+51            android:name="com.school.kotlin.activities.LauncherActivity"
+51-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:31:13-73
+52            android:screenOrientation="portrait"
+52-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:32:13-49
+53            android:theme="@style/AppTheme"
+53-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:33:13-44
+54            android:windowSoftInputMode="adjustPan|adjustResize" >
+54-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:34:13-65
+55            <intent-filter>
+55-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:35:13-38:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:36:17-69
+56-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:36:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:37:17-77
+58-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:37:27-74
+59            </intent-filter>
+60        </activity>
+61        <activity
+61-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:41:9-46:55
+62            android:name="com.school.kotlin.activities.DashboardNavigation"
+62-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:42:13-76
+63            android:label="@string/title_activity_dashboard"
+63-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:43:13-61
+64            android:screenOrientation="portrait"
+64-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:44:13-49
+65            android:theme="@style/AppTheme"
+65-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:45:13-44
+66            android:windowSoftInputMode="adjustPan" />
+66-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:46:13-52
+67        <activity
+67-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:48:9-53:55
+68            android:name="com.school.kotlin.activities.navigational.NavigationalActivity"
+68-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:49:13-90
+69            android:launchMode="singleTask"
+69-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:50:13-44
+70            android:screenOrientation="portrait"
+70-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:51:13-49
+71            android:theme="@style/AppTheme"
+71-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:52:13-44
+72            android:windowSoftInputMode="adjustPan" />
+72-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:53:13-52
+73
+74        <meta-data
+74-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:56:9-58:69
+75            android:name="com.google.android.gms.version"
+75-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:57:13-58
+76            android:value="@integer/google_play_services_version" />
+76-->E:\android projects\Aone school\aOne\app\src\main\AndroidManifest.xml:58:13-66
+77
+78        <provider
+78-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:23:9-26:40
+79            android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"
+79-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:24:13-91
+80            android:authorities="com.school.kotlin.chuck.provider"
+80-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:25:13-66
+81            android:exported="false" />
+81-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:26:13-37
+82
+83        <activity
+83-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:28:9-33:50
+84            android:name="com.readystatesoftware.chuck.internal.ui.MainActivity"
+84-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:29:13-81
+85            android:label="@string/chuck_name"
+85-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:30:13-47
+86            android:launchMode="singleTask"
+86-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:31:13-44
+87            android:taskAffinity="com.readystatesoftware.chuck.task"
+87-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:32:13-69
+88            android:theme="@style/Chuck.Theme" />
+88-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:33:13-47
+89        <activity
+89-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:34:9-37:50
+90            android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity"
+90-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:35:13-88
+91            android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity"
+91-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:36:13-95
+92            android:theme="@style/Chuck.Theme" />
+92-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:37:13-47
+93
+94        <service
+94-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:39:9-41:40
+95            android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
+95-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:40:13-98
+96            android:exported="false" />
+96-->[com.readystatesoftware.chuck:library:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\201308945507761a8c2ca42bb092969f\library-1.1.0\AndroidManifest.xml:41:13-37
+97
+98        <meta-data
+98-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:26:9-28:38
+99            android:name="android.support.VERSION"
+99-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:27:13-51
+100            android:value="26.1.0" />
+100-->[com.android.support:design:26.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\29e87ea0b6e2f667e55076c8e822a1e9\design-26.1.0\AndroidManifest.xml:28:13-35
+101
+102        <activity
+102-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:29:9-32:66
+103            android:name="com.facebook.FacebookActivity"
+103-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:30:13-57
+104            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+104-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:31:13-96
+105            android:theme="@style/com_facebook_activity_theme" />
+105-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:32:13-63
+106        <activity android:name="com.facebook.CustomTabMainActivity" />
+106-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:33:9-71
+106-->[com.facebook.android:facebook-common:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\9fbec11beb70f205dde32982e09c3d9d\facebook-common-4.28.0\AndroidManifest.xml:33:19-68
+107        <activity
+107-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:20:9-189
+108            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+108-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:20:19-68
+109            android:excludeFromRecents="true"
+109-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:20:129-162
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:20:163-187
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:20:69-128
+112        <!--
+113Service handling Google Sign-In user revocation. For apps that do not integrate with
+114            Google Sign-In, this service will never be started.
+115        -->
+116        <service
+116-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:24:9-184
+117            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+117-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:24:18-63
+118            android:exported="true"
+118-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:24:64-87
+119            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+119-->[com.google.android.gms:play-services-auth:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\c70c200df39f9b486e02acbe1b926a03\play-services-auth-11.4.2\AndroidManifest.xml:24:88-182
+120
+121        <receiver
+121-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:25:7-26:18
+122            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+122-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:25:17-89
+123            android:enabled="true"
+123-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:25:90-112
+124            android:exported="false" >
+124-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:25:113-137
+125        </receiver>
+126        <receiver
+126-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:27:7-31:18
+127            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+127-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:27:17-104
+128            android:enabled="true"
+128-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:27:162-184
+129            android:exported="true"
+129-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:27:185-208
+130            android:permission="android.permission.INSTALL_PACKAGES" >
+130-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:27:105-161
+131            <intent-filter>
+131-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:28:11-30:27
+132                <action android:name="com.android.vending.INSTALL_REFERRER" />
+132-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:29:15-76
+132-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:29:23-74
+133            </intent-filter>
+134        </receiver>
+135
+136        <service
+136-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:32:7-137
+137            android:name="com.google.android.gms.measurement.AppMeasurementService"
+137-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:32:16-87
+138            android:enabled="true"
+138-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:32:88-110
+139            android:exported="false" />
+139-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:32:111-135
+140        <service
+140-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:33:7-197
+141            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+141-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:33:16-90
+142            android:enabled="true"
+142-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:33:148-170
+143            android:exported="false"
+143-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:33:171-195
+144            android:permission="android.permission.BIND_JOB_SERVICE" />
+144-->[com.google.firebase:firebase-analytics:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\3ee3f469f9d32cf81938098403b927ee\firebase-analytics-11.4.2\AndroidManifest.xml:33:91-147
+145
+146        <receiver
+146-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:30:9-35:20
+147            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+147-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:30:19-84
+148            android:exported="true"
+148-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:30:85-108
+149            android:permission="com.google.android.c2dm.permission.SEND" >
+149-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:30:109-169
+150            <intent-filter>
+150-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:31:13-34:29
+151                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+151-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:32:17-80
+151-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:32:25-78
+152
+153                <category android:name="com.school.kotlin" />
+153-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:33:17-60
+153-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:33:27-58
+154            </intent-filter>
+155        </receiver>
+156        <!--
+157 Internal (not exported) receiver used by the app to start its own exported services
+158             without risk of being spoofed.
+159        -->
+160        <receiver
+160-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:39:9-119
+161            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+161-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:39:19-92
+162            android:exported="false" />
+162-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:39:93-117
+163        <!--
+164 FirebaseInstanceIdService performs security checks at runtime,
+165             no need for explicit permissions despite exported="true"
+166        -->
+167        <service
+167-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:43:9-47:19
+168            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+168-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:43:18-82
+169            android:exported="true" >
+169-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:43:83-106
+170            <intent-filter android:priority="-500" >
+170-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:44:13-46:29
+170-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:44:28-51
+171                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+171-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:45:17-79
+171-->[com.google.firebase:firebase-iid:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\7bb49ccbcbba94074dcf2aabae3d50b5\firebase-iid-11.4.2\AndroidManifest.xml:45:25-77
+172            </intent-filter>
+173        </service>
+174
+175        <provider
+175-->[com.google.firebase:firebase-common:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\2b3a9fdc8faf865c250944699f5f7e03\firebase-common-11.4.2\AndroidManifest.xml:6:9-194
+176            android:name="com.google.firebase.provider.FirebaseInitProvider"
+176-->[com.google.firebase:firebase-common:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\2b3a9fdc8faf865c250944699f5f7e03\firebase-common-11.4.2\AndroidManifest.xml:6:79-143
+177            android:authorities="com.school.kotlin.firebaseinitprovider"
+177-->[com.google.firebase:firebase-common:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\2b3a9fdc8faf865c250944699f5f7e03\firebase-common-11.4.2\AndroidManifest.xml:6:19-78
+178            android:exported="false"
+178-->[com.google.firebase:firebase-common:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\2b3a9fdc8faf865c250944699f5f7e03\firebase-common-11.4.2\AndroidManifest.xml:6:144-168
+179            android:initOrder="100" />
+179-->[com.google.firebase:firebase-common:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\2b3a9fdc8faf865c250944699f5f7e03\firebase-common-11.4.2\AndroidManifest.xml:6:169-192
+180
+181        <activity
+181-->[com.google.android.gms:play-services-base:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\05c7b435c528ddababa258797dfb3f5b\play-services-base-11.4.2\AndroidManifest.xml:19:9-172
+182            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+182-->[com.google.android.gms:play-services-base:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\05c7b435c528ddababa258797dfb3f5b\play-services-base-11.4.2\AndroidManifest.xml:19:19-85
+183            android:exported="false"
+183-->[com.google.android.gms:play-services-base:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\05c7b435c528ddababa258797dfb3f5b\play-services-base-11.4.2\AndroidManifest.xml:19:146-170
+184            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+184-->[com.google.android.gms:play-services-base:11.4.2] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\05c7b435c528ddababa258797dfb3f5b\play-services-base-11.4.2\AndroidManifest.xml:19:86-145
+185
+186        <provider
+186-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc13d850cb397960f44a028113817541\extensions-1.1.0\AndroidManifest.xml:23:9-27:43
+187            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+187-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc13d850cb397960f44a028113817541\extensions-1.1.0\AndroidManifest.xml:24:13-83
+188            android:authorities="com.school.kotlin.lifecycle-trojan"
+188-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc13d850cb397960f44a028113817541\extensions-1.1.0\AndroidManifest.xml:25:13-68
+189            android:exported="false"
+189-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc13d850cb397960f44a028113817541\extensions-1.1.0\AndroidManifest.xml:26:13-37
+190            android:multiprocess="true" />
+190-->[android.arch.lifecycle:extensions:1.1.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\dc13d850cb397960f44a028113817541\extensions-1.1.0\AndroidManifest.xml:27:13-40
+191        <!--
+192         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+193         with the application context. This config is merged in with the host app's manifest,
+194         but there can only be one provider with the same authority activated at any given
+195         point; so if the end user has two or more different apps that use Facebook SDK, only the
+196         first one will be able to use the provider. To work around this problem, we use the
+197         following placeholder in the authority to identify each host application as if it was
+198         a completely different provider.
+199        -->
+200        <provider
+200-->[com.facebook.android:facebook-core:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\654c7a130ca47f2b8ee43114c11cc0fe\facebook-core-4.28.0\AndroidManifest.xml:39:9-42:40
+201            android:name="com.facebook.internal.FacebookInitProvider"
+201-->[com.facebook.android:facebook-core:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\654c7a130ca47f2b8ee43114c11cc0fe\facebook-core-4.28.0\AndroidManifest.xml:40:13-70
+202            android:authorities="com.school.kotlin.FacebookInitProvider"
+202-->[com.facebook.android:facebook-core:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\654c7a130ca47f2b8ee43114c11cc0fe\facebook-core-4.28.0\AndroidManifest.xml:41:13-72
+203            android:exported="false" />
+203-->[com.facebook.android:facebook-core:4.28.0] C:\Users\lovkesh handa\.gradle\caches\transforms-2\files-2.1\654c7a130ca47f2b8ee43114c11cc0fe\facebook-core-4.28.0\AndroidManifest.xml:42:13-37
+204    </application>
+205
+206</manifest>

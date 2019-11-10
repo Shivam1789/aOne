@@ -19,7 +19,7 @@
     <string name="formatted_place_data">%1$s</string>
     <string name="place_select_failed">Place selection failed:</string>
     <string name="set_time">00.00</string>
-    <string name="the_school_app">The school app</string>
+    <string name="the_school_app">Aone Classes</string>
     <string name="let_s_start">Let\'s Start</string>
     <string name="welcome_to_the_school_app">Welcome to The School App !</string>
     <string name="check_location_permission_setting">Cant Fetch Location Please Check Permissions Setting</string>
@@ -38,7 +38,6 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="phone_number">Phone Number</string>
-    <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="submit">Submit</string>
     <string name="abount">About</string>
@@ -105,10 +104,12 @@
     <string name="_00_40">00:40</string>
     <string name="resend_otp">Resend OTP</string>
     <string name="about_us">About Us</string>
+    <string name="btnnext">Next</string>
     <string name="signUp_phone_empty">Enter your Phone Number.</string>
     <string name="phn_number_length">Please enter phone number between 8 to 15 digits</string>
     <string name="oops_you_don_t_have_access">Oops!!! You Don\'t have access</string>
     <string name="otp_empty">Enter the OTP</string>
+    <string name="login_subtitle">Great to see you again!</string>
     <string name="login_phone_empty">Enter your Phone Number.</string>
     <string name="login_password_empty">Enter the Password.</string>
     <string name="forgot_phone_empty">Enter your Phone Number.</string>
@@ -144,5 +145,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_course" >your course</string>
+    <string name="choose">Choose</string>
+    <string name="password">Password</string>
 
 </resources>

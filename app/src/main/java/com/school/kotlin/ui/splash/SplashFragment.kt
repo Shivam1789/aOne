@@ -15,6 +15,8 @@ import com.school.kotlin.R
 import com.school.kotlin.activities.navigational.NavigationalActivity
 import com.school.kotlin.ui.other.BaseFragment
 import com.school.kotlin.ui.otp.FragmentOtp
+import com.school.kotlin.ui.select_class.FragmentSelectClass
+import com.school.kotlin.ui.tutorial.FragmentTutorial
 import com.school.kotlin.utils.Constants
 import com.school.kotlin.utils.getValue
 
@@ -64,16 +66,18 @@ class SplashFragment : BaseFragment() {
         val tutorialStatus = pref?.getValue(Constants.IS_TUTORIAL_SEEN, false)
         val enableLocationStatus = pref?.getValue(Constants.IS_ENABLE_LOCATION, false)
 
-//        if (tutorialStatus != null && !tutorialStatus) {
-//            replaceFragment(FragmentOtp(), true)
-//        } else if (enableLocationStatus != null && !enableLocationStatus) {
-//
-//        } else {
+        if (tutorialStatus != null && !tutorialStatus) {
+            replaceFragment(FragmentTutorial(), true)
+        } else if (tutorialStatus != null && tutorialStatus) {
+            replaceFragment(FragmentOtp(), true)
+        } else if (enableLocationStatus != null && !enableLocationStatus) {
+
+        } else {
             val intent = Intent(activity, NavigationalActivity::class.java)
             startActivity(intent)
             activity?.finish()
             activity?.overridePendingTransition(R.anim.anim_in, R.anim.anim_out)
-//        }
+        }
         hideProgressDialog()
     }
 

@@ -13,6 +13,7 @@ import com.school.kotlin.R
 import com.school.kotlin.activities.BaseActivity
 import com.school.kotlin.activities.DashboardNavigation
 import com.school.kotlin.data.Status
+import com.school.kotlin.ui.HomeFragment
 import com.school.kotlin.utils.Constants
 import com.school.kotlin.utils.Utils
 import kotlinx.android.synthetic.main.activity_nevigation.*
@@ -35,10 +36,8 @@ class NavigationalActivity : BaseActivity(), View.OnClickListener {
     }
 
     private fun init() {
-        val intent = Intent(this, DashboardNavigation::class.java)
-        startActivity(intent)
-        overridePendingTransition(R.anim.anim_in, R.anim.anim_out)
         setListener()
+        replaceFragment(HomeFragment())
     }
 
 
