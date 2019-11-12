@@ -7,8 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.school.kotlin.R
+import kotlinx.android.synthetic.main.layout_item.view.*
 
-class SubjetsAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+class SubjetsAdapter(val context: Context, var mTestArray: Array<String>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val DATA = 1
     private val LOADER = 2
@@ -19,8 +21,6 @@ class SubjetsAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.V
     private var mTotalItemCount: Int = 0
     private var mFirstVisibleItem: Int = 0
     private var mIsNoMoreLoading: Boolean = true
-
-    private val list = ArrayList<Any?>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return when (viewType) {
@@ -41,14 +41,14 @@ class SubjetsAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.V
     }
 
     override fun getItemCount(): Int {
-        return 4
+        return mTestArray?.size ?: 0
     }
 
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         if (holder is ViewHolderItem) {
-//            val item = list[position]
-//            item?.let { holder.bind(it as DataItem) }
+            val item = mTestArray?.get(position)
+            item?.let { holder.bind(it) }
 
 
         }
@@ -75,35 +75,47 @@ class SubjetsAdapter(val context: Context) : RecyclerView.Adapter<RecyclerView.V
 //    }
 
 
-    fun clearList() {
-        list.clear()
-        notifyDataSetChanged()
-    }
-
-    fun updateLoadmore(status: Boolean) {
-        mIsNoMoreLoading = status
-    }
-
-    fun addLoadMore() {
-        list.add(null)
-        notifyItemInserted(list.size.minus(1))
-    }
-
-    fun removeLoadMore() {
-        if (list.isNotEmpty()) {
-            val lastPos = list.size.minus(1)
-            if (list[lastPos] == null) {
-                list.removeAt(lastPos)
-                notifyItemRemoved(lastPos)
-            }
-        }
-    }
+//    fun clearList() {
+//        list.clear()
+//        notifyDataSetChanged()
+//    }
+//
+//    fun updateLoadmore(status: Boolean) {
+//        mIsNoMoreLoading = status
+//    }
+//
+//    fun addLoadMore() {
+//        list.add(null)
+//        notifyItemInserted(list.size.minus(1))
+//    }
+//
+//    fun removeLoadMore() {
+//        if (list.isNotEmpty()) {
+//            val lastPos = list.size.minus(1)
+//            if (list[lastPos] == null) {
+//                list.removeAt(lastPos)
+//                notifyItemRemoved(lastPos)
+//            }
+//        }
+//    }
 
 
     inner class ViewHolderItemLoader(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 
     inner class ViewHolderItem(view: View) : RecyclerView.ViewHolder(view) {
+        val colorArray = arrayOf(
+                0xfff44336,0xffe91e63,0xff9c27b0,0xff673ab7,
+                0xff3f51b5,0xff2196f3,0xff03a9f4,0xff00bcd4,
+                0xff009688,0xff4caf50,0xff8bc34a,0xffcddc39,
+                0xffffeb3b,0xffffc107,0xffff9800,0xffff5722,
+                0xff795548,0xff9e9e9e,0xff607d8b,0xff333333
+        )
+        fun bind(it: String) {
+            itemView?.txt_subject_name?.text = it
+            itemView?.layout_item?.setBackgroundColor(colorArray.get(adapterPosition).toInt())
+        }
+
         init {
 
         }

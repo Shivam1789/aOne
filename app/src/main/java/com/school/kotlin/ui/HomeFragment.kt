@@ -12,8 +12,11 @@ import com.school.kotlin.adapter.SubjetsAdapter
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
+
+
 class HomeFragment : Fragment() {
     private var mAdapter: SubjetsAdapter? = null
+    var mTestArray: Array<String>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +31,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        mTestArray = getResources().getStringArray(R.array.testArray);
         setAdapter()
+
     }
 
     private fun setAdapter() {
-        mAdapter = activity?.let { SubjetsAdapter(it) }
+        mAdapter = activity?.let { SubjetsAdapter(it,mTestArray) }
         val layoutManger = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         recycler_subjects.layoutManager = GridLayoutManager(activity, 2)
         recycler_subjects.adapter = mAdapter

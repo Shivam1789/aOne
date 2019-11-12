@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.view.Window
 import com.school.kotlin.R
 import com.school.kotlin.activities.navigational.NavigationalActivity
+import com.school.kotlin.ui.login.FragmentLogin
 import com.school.kotlin.ui.other.BaseFragment
 import com.school.kotlin.ui.otp.FragmentOtp
 import com.school.kotlin.ui.select_class.FragmentSelectClass
@@ -67,7 +68,7 @@ class SplashFragment : BaseFragment() {
         val enableLocationStatus = pref?.getValue(Constants.IS_ENABLE_LOCATION, false)
 
         if (tutorialStatus != null && !tutorialStatus) {
-            replaceFragment(FragmentTutorial(), true)
+            replaceFragment(FragmentLogin(), true)
         } else if (tutorialStatus != null && tutorialStatus) {
             replaceFragment(FragmentOtp(), true)
         } else if (enableLocationStatus != null && !enableLocationStatus) {

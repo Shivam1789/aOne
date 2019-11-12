@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">One School</string>
+    <string name="app_name">A-one Class</string>
     <string name="title_activity_dashboard">dashboardActivity</string>
     <string name="no_internet_message">Internet connection appears to be offline. Please check your network settings.</string>
     <string name="engage_with_your_school"><![CDATA[Engage with your school anytime \n & anywhere. \n Let\'s get connected !!]]></string>
@@ -148,5 +148,18 @@
     <string name="your_course" >your course</string>
     <string name="choose">Choose</string>
     <string name="password">Password</string>
+    <string name="registeration">Registration</string>
 
+    <string-array name="testArray">
+        <item>NCRT Books &amp; Solutions</item>
+        <item>Books &amp; Solutions</item>
+        <item>CBSE Books</item>
+        <item>Mock Test</item>
+        <item>Neet</item>
+        <item>JEE</item>
+        <item>UG</item>
+        <item>PG</item>
+        <item>All Cometitive Exam</item>
+        <item>Special Coaching Classes</item>
+    </string-array>
 </resources>
